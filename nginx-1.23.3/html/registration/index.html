@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body {
+            height: 30%;
+            background-color: #fff;
+        }
+
+        .card {
+            background-color: #f5f5f5;
+            width: 290px;
+            border-radius: 33px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 2rem !important;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -220px 0 0 -200px;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+
+            .form-signin .checkbox {
+                font-weight: 400;
+            }
+
+            .form-signin .form-floating:focus-within {
+                z-index: 1;
+            }
+
+            .form-signin input[type="fio"] {
+                margin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .form-signin input[type="group"] {
+                rgin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .form-signin input[type="password"] {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+        .meeting {
+            font-size: 25px;
+            font-family: Comic Sans MS, sans-serif;
+            font-weight: bold;
+            color: #272727;
+            position: relative;
+        }
+
+        .text-appir {
+            font-size: 14px;
+            font-family: Comic Sans MS, sans-serif;
+            font-weight: bold;
+            color: #272727;
+            position: relative;
+        }
+
+        .comm-appir {
+            font-size: 11px;
+            font-family: Comic Sans MS, sans-serif;
+            color: #272727;
+            position: relative;
+        }
+
+        .middle-container:hover {
+            border: 1px solid #5957f9;
+        }
+
+        .button-design {
+            background: linear-gradient(to right, orange, violet);
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .alignment-button {
+            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    </style>
+
+
+</head>
+
+<body class="card">
+    <main>
+        <form>
+            <h1 class="meeting">Давай познакомимся!</h1>
+
+            <div class="text-appir">
+                <label for="floatingInput" style="width: 35.4%;display: inline-block;">Фамилия</label>
+                <input class="comm-appir" id="floatingInput" placeholder="Михачев">
+            </div>
+
+            <div class="text-appir">
+                <label for="floatingInput2" style="width: 35.4%;display: inline-block;">Имя</label>
+                <input class="comm-appir" id="floatingInput2" placeholder="Андрей">
+            </div>
+
+            <div class="text-appir">
+                <label for="floatingInput3" style="width: 35.4%; display: inline-block;">Группа</label>
+                <input class="comm-appir" id="floatingInput3" placeholder="ИУ5Ц-21Б">
+            </div>
+
+            <div class="text-appir">
+                <label for="floatingPassword" style="width: 35.4%; display: inline-block;">Пароль</label>
+                <input type="password" class="form-control comm-appir" id="floatingPassword" placeholder="Пароль">
+            </div>
+
+            <br></br>
+
+            <div class="middle-container d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column text-right mr-2">
+                    <button class="button-design alignment-button w-100 btn btn-lg btn-primary" type="button" onclick="sendDataAndFill();">Зарегистрироваться</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="test.js"></script>
+
+</body>
+</html>
